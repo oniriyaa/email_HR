@@ -1,0 +1,16 @@
+<!-- Save this as upload.html and open in your browser -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Excel File</title>
+</head>
+<body>
+  <h2>Contact Search API</h2>
+  <form action="http://127.0.0.1:5000/upload" method="post" enctype="multipart/form-data">
+    <label>Select Excel file (.xlsx):</label>
+    <input type="file" name="file" accept=".xlsx" required>
+    <button type="submit">Upload</button>
+  </form>
+  <p>After uploading, you will receive a download URL in the response.</p>
+</body>
+</html>
